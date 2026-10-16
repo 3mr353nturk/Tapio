@@ -53,6 +53,26 @@ npm run dev
 
 API CORS, `localhost` ve `ngrok` origin’lerine izin verecek şekilde ayarlıdır.
 
+## GitHub'a yükleme
+
+Proje yerelde `git init` + ilk commit ile hazır. GitHub CLI kurulu (`gh`).
+
+```powershell
+gh auth login
+cd c:\Users\Condo\Desktop\Tapio
+powershell -File scripts/push-github.ps1
+# veya farkli repo adi: scripts/push-github.ps1 tapio-mvp
+```
+
+Manuel: GitHub'da boş repo oluşturun, sonra:
+
+```bash
+git remote add origin https://github.com/KULLANICI/Tapio.git
+git push -u origin main
+```
+
+`.env.local`, `node_modules/`, `uploads/` commit edilmez. `appsettings.json` içinde **geliştirme** SQL/JWT değerleri vardır; public repo için production'da mutlaka değiştirin.
+
 ## Oturum süreleri (varsayılan)
 
 - Access token: **480 dk** (~8 saat) — `Jwt:AccessTokenMinutes`
