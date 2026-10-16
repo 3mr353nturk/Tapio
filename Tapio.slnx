@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Tapio.API/Tapio.API.csproj" />
+    <Project Path="src/Tapio.Application/Tapio.Application.csproj" />
+    <Project Path="src/Tapio.Domain/Tapio.Domain.csproj" />
+    <Project Path="src/Tapio.Infrastructure/Tapio.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Tapio.API.Tests/Tapio.API.Tests.csproj" />
+    <Project Path="tests/Tapio.Application.Tests/Tapio.Application.Tests.csproj" />
+  </Folder>
+</Solution>
